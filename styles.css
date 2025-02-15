@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Questrial;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 129);
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    align-items: center;
+    height: 260px;
+    width: 460px;
+    padding: 20px;
+    transition: none;
+}
+
+.container.active{
+    height: 500px;
+    transition: none;
+}
+
+#qr-header{
+    text-align: center;
+}
+
+#qr-header h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#qr-header p{
+    color: #444;
+    font-size: 0.9rem;
+}
+
+/* form */
+
+#qr-form {
+    margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button{
+    width: 100%;
+    height: 55px;
+    border: none;
+    font-size: 0.9rem;
+    font-size: 13px;
+}
+
+#qr-form input{
+    border: 1px solid #d4d4d4;
+    padding: 10px 15px;
+}
+
+#qr-form button{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color:rgb(74, 74, 129);
+    color: white;
+    cursor: pointer;
+}
+
+#qr-form button:hover{
+    background-color:rgb(46, 46, 77) ;
+}
+
+/* qr code */
+
+#qr-code{
+    display: flex;
+    opacity: 0;
+    border: 1px solid #d4d4d4;
+    padding: 30px 0;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    transition: none;
+}
+
+#qr-code img{
+    max-width: 155px;
+    height: auto;
+}
+
+.container.active #qr-code{
+     opacity: 1;
+}
+/* no caso esse active, vai ser inserido no javascript mais tarde */
