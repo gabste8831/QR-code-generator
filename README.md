@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/5973ca03-1985-4a45-9273-c8871e9dfa5e)# Gerador de QR Code
-
 ## Descrição
 Este é um projeto simples de Gerador de QR Code que permite ao usuário inserir uma URL ou um texto e gerar um QR Code correspondente. O QR Code é gerado utilizando a API `qrserver.com`.
 
